@@ -203,7 +203,7 @@ training_images = []
 labels = []
 # import training data
 # normal
-folder = "C:/Users/ashle/OneDrive/Desktop/HP/Dataset/ICIAR2018_BACH_Challenge/Photos/Normal"
+folder = "/Normal"
 for filename in os.listdir(folder):
     if filename.endswith(".jpg"):
         img = cv2.imread(os.path.join(folder, filename))
@@ -216,7 +216,7 @@ for filename in os.listdir(folder):
 
 
 # benign
-folder = "/Benign/"
+folder = "/Benign"
 for filename in os.listdir(folder):
     if filename.endswith(".jpg"):
         img = cv2.imread(os.path.join(folder, filename))
@@ -228,7 +228,7 @@ for filename in os.listdir(folder):
                 training_images.append(data_augmentation(q))
 
 # InSitu
-folder = "C:/Users/ashle/OneDrive/Desktop/HP/Dataset/ICIAR2018_BACH_Challenge/Photos/InSitu"
+folder = "/InSitu"
 for filename in os.listdir(folder):
     if filename.endswith(".jpg"):
         img = cv2.imread(os.path.join(folder, filename))
@@ -240,7 +240,7 @@ for filename in os.listdir(folder):
                 training_images.append(data_augmentation(q))
 
 # Invasive
-folder = "C:/Users/ashle/OneDrive/Desktop/HP/Dataset/ICIAR2018_BACH_Challenge/Photos/Invasive"
+folder = "/Invasive"
 for filename in os.listdir(folder):
     if filename.endswith(".jpg"):
         img = cv2.imread(os.path.join(folder, filename))
@@ -253,7 +253,7 @@ for filename in os.listdir(folder):
 
 # test
 test_image = []
-folder = "C:/Users/ashle/OneDrive/Desktop/HP/Dataset/ICIAR2018_BACH_Challenge_TestDataset/Photos"
+folder = "/Test"
 for filename in os.listdir(folder):
     if filename.endswith(".jpg"):
         img = cv2.imread(os.path.join(folder, filename))
