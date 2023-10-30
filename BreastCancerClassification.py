@@ -216,7 +216,7 @@ for filename in os.listdir(folder):
 
 
 # benign
-folder = "C:/Users/ashle/OneDrive/Desktop/HP/Dataset/ICIAR2018_BACH_Challenge/Photos/Benign"
+folder = "/Benign/"
 for filename in os.listdir(folder):
     if filename.endswith(".jpg"):
         img = cv2.imread(os.path.join(folder, filename))
